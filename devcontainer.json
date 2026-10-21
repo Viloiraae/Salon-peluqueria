@@ -1,0 +1,12 @@
+{
+  "name": "RDB Alpha",
+  "dockerFile": "../Dockerfile",
+  "workspaceFolder": "/workspace/project",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "coderoad.coderoad"
+      ]
+    }
+  }
+}
