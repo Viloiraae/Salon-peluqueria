@@ -43,7 +43,7 @@ ADD_CUSTOMER=$($PSQL "INSERT INTO customers (phone, name) VALUES ('$CUSTOMER_PHO
 fi
 #Obtener id del cliente
 CUSTOMER_ID=$($PSQL "SELECT customer_id FROM customers WHERE phone = '$CUSTOMER_PHONE'")
-COSTUMER_NAME=$($PSQL "SELECT name FROM costumers WHERE costumer_id = '$COSTUMER_ID")
+COSTUMER_NAME=$($PSQL "SELECT name FROM customer WHERE customer_id = '$CUSTOMER_ID'")
 #Solicitar la cita, con formato predefinido
 echo -e "\n¿Que fecha y hora te va mejor?\n"
 read SERVICE_TIME
